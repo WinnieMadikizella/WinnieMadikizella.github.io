@@ -3,27 +3,52 @@
 [![Website](https://img.shields.io/badge/Portfolio-Live-brightgreen)](https://winniemadikizella.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Winnie_Madikizella-blue)](https://www.linkedin.com/in/winnie-madikizella-data/)
 
-A responsive, visually appealing, and functional personal portfolio website built entirely using **raw HTML5** and **CSS3** (no frameworks or libraries).  
-This site showcases my technical expertise, unique design style, and real-world analytics projects.
-
 **Live Portfolio:** [https://winniemadikizella.github.io/](https://winniemadikizella.github.io/)
 
 ---
 
-## Features
-- **Responsive Design** – Works seamlessly across desktop, tablet, and mobile.
-- **Original Branding** – Custom layout, color scheme, and typography.
-- **Detailed Project Pages** – Screenshots, descriptions, and links to demos.
-- **Accessible Navigation** – Simple, intuitive menu structure.
-- **Clean Code** – Hand-coded HTML and CSS.
+## Purpose
+This is a **multipage portfolio website** showcasing Data & Business Intelligence projects, skills, and contact details. Built with **HTML5, CSS3, and JavaScript**, it demonstrates responsive design, interactivity, and modern web practices.
+
+---
+
+## Pages
+- `index.html` — Home / Hero Section & featured projects  
+- `about.html` — Bio, skills, and achievements  
+- `portfolio.html` — Project gallery and case studies  
+- `contact.html` — Contact form with validation  
+
+---
+
+## Key Features
+- Fully **responsive multipage layout** for desktop, tablet, and mobile  
+- **Client-side form validation** (Contact page) with simulated submission  
+- **Mobile hamburger menu** with accessible `aria` attributes  
+- **Scroll reveal animations** using `IntersectionObserver`  
+- Active navigation highlighting  
+- **Scroll-to-top button**  
+- **Light / Dark mode toggle** with persisted preference using `localStorage`  
+- Clean and organized **project structure** (`assets/css`, `assets/js`, `assets/images`)  
 
 ---
 
 ## Technologies
-- **HTML5** – Semantic, structured markup.
-- **CSS3** – Custom styling, responsive layouts.
-- **Git & GitHub** – Version control and hosting.
-- **GitHub Pages** – Deployment.
+- **HTML5** – Semantic and structured markup  
+- **CSS3** – Responsive layouts, custom styles, and animations  
+- **JavaScript** – Interactivity, theme toggle, and scroll effects  
+- **Git & GitHub** – Version control and hosting  
+- **GitHub Pages** – Live deployment  
+
+---
+
+## Running Locally
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/WinnieMadikizella/WinnieMadikizella.github.io.git
+   cd WinnieMadikizella.github.io
+   ```
+
+2. Open index.html in your browser (no server required)
 
 ---
 
@@ -31,16 +56,19 @@ This site showcases my technical expertise, unique design style, and real-world 
 ```
 WinnieMadikizella.github.io/
 │
-├── index.html # Homepage / Hero Section
-├── about.html # About Me
-├── portfolio.html # Projects & Case Studies
-├── contact.html # Contact Form & Info
-││
-└───assets/ # Static assets (CSS, files, images)
-├───css/
-│ style.css # Main stylesheet
+├── index.html         # Homepage / Hero Section & Featured Projects
+├── about.html         # About Me / Skills & Achievements
+├── portfolio.html     # Projects & Case Studies
+├── contact.html       # Contact Form & Information
 │
-└── README.md # Documentation
+└───assets/            # Static assets
+    ├── css/           # Stylesheets
+    ├── js/            # JavaScript interactivity
+    ├── images/        # Profile & project images
+    └── files/         # Project files & resume
+│
+└── README.md          # Documentation
+
 ```
 
 ---
@@ -77,10 +105,12 @@ WinnieMadikizella.github.io/
 
 ---
 
-This portfolio was **self-directed from concept to deployment** using HTML, CSS, and GitHub Pages, demonstrating both design skills and technical proficiency.
-
----
-
 ## Contact
 - **Email:** madikizellawinnie@gmail.com  
 - **LinkedIn:** [https://www.linkedin.com/in/winnie-madikizella-data/](https://www.linkedin.com/in/winnie-madikizella-data/)    
+
+---
+
+This portfolio demonstrates a full workflow from concept to deployment, combining design, responsive layout, interactivity, and technical proficiency.
+
+---

@@ -7,8 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Winnie Madikizella</title>
   <link rel="stylesheet" href="assets/css/style.css">
+
   <style>
-    
     /* Contact page grid */
     .contact-grid {
       display: flex;
@@ -61,6 +61,14 @@
       font-size: 1rem;
     }
 
+    /* Success message */
+    .success-message {
+      margin-top: 1rem;
+      color: green;
+      font-weight: bold;
+      display: none;
+    }
+
     /* Responsive adjustments */
     @media (max-width: 768px) {
       .contact-grid {
@@ -69,10 +77,11 @@
     }
   </style>
 </head>
+
 <body>
   <!-- ===== Header ===== -->
-  <!-- Navigation -->
   <nav class="navbar">
+    <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -115,7 +124,7 @@
       <!-- Right Column: Message Form -->
       <div class="contact-form">
         <h2>Send me a message</h2>
-        <form action="mailto:madikizellawinnie@gmail.com" method="post" enctype="text/plain">
+        <form id="contactForm" action="mailto:madikizellawinnie@gmail.com" method="post" enctype="text/plain">
           <label>Full Name:</label>
           <input type="text" name="name" required>
 
@@ -130,6 +139,10 @@
 
           <button type="submit" class="btn-primary">Send Message</button>
         </form>
+
+        <div id="successMessage" class="success-message">
+          ✅ Thanks! Your message is ready to be sent.
+        </div>
       </div>
     </div>
   </section>
@@ -138,5 +151,9 @@
   <footer>
     <p>&copy; 2025 Winnie Madikizella. All Rights Reserved.</p>
   </footer>
+
+  <!-- ===== JavaScript ===== -->
+  <script src="assets/js/main.js"></script>
+  <button id="scrollTopBtn" class="scroll-top" aria-label="Scroll to top">⬆</button>
 </body>
 </html>

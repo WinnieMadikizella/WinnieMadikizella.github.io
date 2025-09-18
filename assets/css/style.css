@@ -262,3 +262,91 @@ body.dark-mode .hero-left { background-color: #2a2a2a; }
   .solution-card { flex: 1 1 100%; }
   .cta-buttons { flex-direction: column; }
 }
+
+/* ===== Portfolio Page Vertical Project Layout ===== */
+.content {
+  display: flex;
+  flex-direction: column; /* stack projects vertically */
+  gap: 30px; /* spacing between projects */
+  align-items: center; /* center cards horizontally */
+  padding: 20px 0;
+}
+
+.project {
+  width: 100%;
+  max-width: 800px; /* adjust card width */
+  text-align: left;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* ===== Portfolio Page Vertical Project Layout (Adjusted) ===== */
+.content {
+  display: flex;
+  flex-direction: column; /* stack projects vertically */
+  gap: 30px; /* spacing between projects */
+  align-items: center; /* center cards horizontally */
+  padding: 20px 0;
+}
+
+.project {
+  width: 90%; /* slightly wider */
+  max-width: 900px; /* max width */
+  text-align: center; /* center titles */
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.project-link {
+  text-decoration: none; /* remove underline */
+  color: inherit;
+}
+
+.project-link h2 {
+  margin-bottom: 1rem;
+  color: #0d253f; /* default title color */
+  transition: color 0.3s;
+}
+
+.project-link:hover h2 {
+  color: #0097b2; /* hover color */
+}
+
+/* Justify project descriptions */
+.project p {
+  text-align: justify;
+  margin-bottom: 0.5rem;
+  color: #555;
+  line-height: 1.6;
+}
+
